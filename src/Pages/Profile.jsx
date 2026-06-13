@@ -21,7 +21,7 @@ const Profile = () => {
   const [orders, setOrders] = useState([]);
 
   const wishlist = useSelector(
-    (state) => state.wishlist?.wishlistItems || []
+    (state) => state.Wishlist?.wishlistItems || []
   );
 
   useEffect(() => {

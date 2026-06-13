@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const wishlistSlice = createSlice({
+const WishlistSlice = createSlice({
   name: "wishlist",
 
   initialState: {
@@ -48,4 +48,4 @@ export const {
   toggleWishlist,
 } = wishlistSlice.actions;
 
-export default wishlistSlice.reducer;
+export default WishlistSlice.reducer;

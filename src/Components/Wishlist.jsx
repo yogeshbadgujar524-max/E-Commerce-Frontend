@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromWishlist } from "../Redux/wishlistSlice";
+import { removeFromWishlist } from "../Redux/WishlistSlice";
 
 const Wishlist = () => {
   const dispatch = useDispatch();

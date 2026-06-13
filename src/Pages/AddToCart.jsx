@@ -3,7 +3,7 @@ import {
   removeFromCart,
   increaseQty,
   decreaseQty,
-} from "../Redux/cartSlice";
+} from "../Redux/CartSlice";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 

@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const savedOrders =
   JSON.parse(localStorage.getItem("orders")) || [];
 
-const orderSlice = createSlice({
+const OrderSlice = createSlice({
   name: "orders",
 
   initialState: {
@@ -53,4 +53,4 @@ export const {
   updateOrderStatus,
 } = orderSlice.actions;
 
-export default orderSlice.reducer;
+export default OrderSlice.reducer;
