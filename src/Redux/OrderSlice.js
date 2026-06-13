@@ -51,6 +51,6 @@ const OrderSlice = createSlice({
 export const {
   placeOrder,
   updateOrderStatus,
-} = orderSlice.actions;
+} = OrderSlice.actions;
 
 export default OrderSlice.reducer;

@@ -114,6 +114,6 @@ export const {
   filterRating,
   sortProducts,
   clearFilters,
-} = productSlice.actions;
+} = ProductSlice.actions;
 
-export default productSlice.reducer;
+export default ProductSlice.reducer;
