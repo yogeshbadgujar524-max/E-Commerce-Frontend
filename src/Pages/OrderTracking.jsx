@@ -6,7 +6,7 @@ const OrderTracking = () => {
 
   useEffect(() => {
     axios
-      .get("https://e-commerce-backend-chi-three.vercel.app/users/all-orders")
+      .get("https://e-commerce-backend-chi-three.vercel.app/api/all-orders")
       .then((res) => {
         const orders = res.data.orders;
 

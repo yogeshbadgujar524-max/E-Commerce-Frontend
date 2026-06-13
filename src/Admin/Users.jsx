@@ -3,13 +3,24 @@ import { useEffect, useState } from "react";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios
-      .get("https://e-commerce-backend-chi-three.vercel.app/api/users/all-users")
-      .then((res) => setUsers(res.data.users))
-      .catch((err) => console.log(err));
-  }, []);
+  axios
+    .get("https://e-commerce-backend-chi-three.vercel.app/api/all-users")
+    .then((res) => {
+      setUsers(res.data.users);
+      setLoading(false);
+    })
+    .catch((err) => {
+      console.log(err);
+      setLoading(false);
+    });
+}, []);
+
+  if (loading) {
+  return <h1>Loading...</h1>;
+}
 
   return (
     <div className="p-8 bg-gray-900 min-h-screen text-white">

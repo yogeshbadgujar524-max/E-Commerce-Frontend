@@ -25,7 +25,7 @@ const Register = () => {
 
     try {
       const res = await axios.post(
-        "https://e-commerce-backend-chi-three.vercel.app/users/register",
+        "https://e-commerce-backend-chi-three.vercel.app/api/register",
         formData
       );
 

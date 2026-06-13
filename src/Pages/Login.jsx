@@ -50,7 +50,7 @@ const Login = () => {
         // Normal User Login
         try {
             const res = await axios.post(
-                "https://e-commerce-backend-chi-three.vercel.app/users/login",
+                "https://e-commerce-backend-chi-three.vercel.app/api/login",
                 {
                     email: loginData.email,
                     password: loginData.password,

@@ -26,21 +26,21 @@ const Analytics = () => {
   useEffect(() => {
 
     axios.get(
-      "https://e-commerce-backend-chi-three.vercel.app/users/all-users"
+      "https://e-commerce-backend-chi-three.vercel.app/api/all-users"
     )
       .then((res) =>
         setUsers(res.data.users)
       );
 
     axios.get(
-      "https://e-commerce-backend-chi-three.vercel.app/users/all-orders"
+      "https://e-commerce-backend-chi-three.vercel.app/api/all-orders"
     )
       .then((res) =>
         setOrders(res.data.orders)
       );
 
     axios.get(
-      "https://e-commerce-backend-chi-three.vercel.app/products/all-products"
+      "https://e-commerce-backend-chi-three.vercel.app/api/all-products"
     )
       .then((res) =>
         setProducts(res.data.products)

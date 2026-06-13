@@ -26,7 +26,7 @@ const Profile = () => {
 
   useEffect(() => {
     axios
-      .get("https://e-commerce-backend-chi-three.vercel.app/users/all-orders")
+      .get("https://e-commerce-backend-chi-three.vercel.app/api/all-orders")
       .then((res) => {
         setOrders(res.data.orders);
       })

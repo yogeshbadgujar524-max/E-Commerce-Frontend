@@ -15,7 +15,7 @@ const Orders = () => {
 
     axios
       .get(
-        "https://e-commerce-backend-chi-three.vercel.app/users/all-orders"
+        "https://e-commerce-backend-chi-three.vercel.app/api/all-orders"
       )
       .then((res) => {
 

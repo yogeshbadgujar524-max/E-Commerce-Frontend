@@ -5,6 +5,7 @@ import { updateOrderStatus } from "../Redux/OrderSlice";
 
 const OrdersAdmin = () => {
   const dispatch = useDispatch();
+    const [loading, setLoading] = useState(true);
 
   const [orders, setOrders] = useState([]);
 
@@ -15,10 +16,8 @@ const OrdersAdmin = () => {
   const fetchOrders = async () => {
     const res =
       await axios.get(
-        "https://e-commerce-backend-chi-three.vercel.app/api/users/all-orders"
-      );
-
-    setOrders(res.data.orders);
+        "https://e-commerce-backend-chi-three.vercel.app/api/all-orders");
+        setOrders(res.data.orders);
   };
 
   const handleStatusChange =
@@ -26,7 +25,7 @@ const OrdersAdmin = () => {
 
       try {
         await axios.put(
-          `http://localhost:4000/api/users/update-order/${id}`,
+          `https://e-commerce-backend-chi-three.vercel.app/api/update-order/${id}`,
           { status }
         );
 
