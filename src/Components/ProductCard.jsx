@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { FaHeart } from "react-icons/fa";
 
-import { addToCart } from "../Redux/cartSlice";
+import { addToCart } from "../Redux/CartSlice";
 import { addToWishlist } from "../Redux/WishlistSlice";
 
 const ProductCard = ({ product }) => {
