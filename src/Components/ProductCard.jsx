@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { FaHeart } from "react-icons/fa";
 
 import { addToCart } from "../Redux/CartSlice";
-import { addToWishlist } from "../Redux/WishlistSlice";
+import { addToWishlist } from "../Redux/wishlistSlice";
 
 const ProductCard = ({ product }) => {
     const dispatch = useDispatch();
