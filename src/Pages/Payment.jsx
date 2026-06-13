@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { placeOrder } from "../Redux/orderSlice";
+import { placeOrder } from "../Redux/OrderSlice";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
