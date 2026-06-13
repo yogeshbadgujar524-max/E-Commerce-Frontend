@@ -32,7 +32,7 @@ const Payment = () => {
         );
 
       await axios.post(
-        "http://localhost:4000/api/users/create",
+        "https://e-commerce-backend-chi-three.vercel.app/users/create",
         {
           userId: user._id,
 

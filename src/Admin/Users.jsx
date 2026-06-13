@@ -6,7 +6,7 @@ const Users = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/users/all-users")
+      .get("https://e-commerce-backend-chi-three.vercel.app/users/all-users")
       .then((res) => setUsers(res.data.users))
       .catch((err) => console.log(err));
   }, []);
