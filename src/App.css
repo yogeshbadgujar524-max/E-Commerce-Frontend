@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+select {
+    background-color: rgba(128, 128, 128, 0.466);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.active{
+    color: gray;
+    transition: 1.5s;
+}
