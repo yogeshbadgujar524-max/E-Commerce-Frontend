@@ -15,7 +15,7 @@ const OrdersAdmin = () => {
   const fetchOrders = async () => {
     const res =
       await axios.get(
-        "https://e-commerce-backend-chi-three.vercel.app/users/all-orders"
+        "https://e-commerce-backend-chi-three.vercel.app/api/users/all-orders"
       );
 
     setOrders(res.data.orders);
