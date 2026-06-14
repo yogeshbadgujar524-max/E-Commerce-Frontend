@@ -120,13 +120,13 @@ const Navbar = () => {
                 Contact Us
               </NavLink>
             </li>
-            {user ? (<div className="ml-120"><span className="text-pink-500">Welcome {user.firstName}</span>
+            {user ? (<div className="ml-100"><span className="text-pink-500">Welcome {user.firstName}</span>
               <button className="text-2xl relative top-2 left-5" onClick={handleLogout}>
                 <IoIosLogOut />
               </button>
             </div>
             ) : (
-              <Link to={"/login"} className="relative hover:text-yellow-300 ml-160">
+              <Link to={"/login"} className="relative hover:text-yellow-300 ml-120">
                 Login
               </Link>
             )}
