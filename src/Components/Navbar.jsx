@@ -30,9 +30,9 @@ const Navbar = () => {
     navigate("/login");
   };
 
-  if (user && user.role === "admin") {
-    return null;
-  }
+  // if (user && user.role === "admin") {
+  //   return null;
+  // }
 
  useEffect(() => {
   if (!user) {
