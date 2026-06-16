@@ -48,7 +48,7 @@ const OrdersAdmin = () => {
     try {
 
       await axios.delete(
-        `http://localhost:4000/api/users/delete-order/${id}`
+        `http://localhost:4000/api/delete-order/${id}`
       );
 
       fetchOrders();

@@ -30,9 +30,6 @@ const Navbar = () => {
     navigate("/login");
   };
 
-  // if (user && user.role === "admin") {
-  //   return null;
-  // }
 
  useEffect(() => {
   if (!user) {
@@ -68,6 +65,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-4">
 
           {/* Logo + Mobile Menu Button */}
+          {user && user.role === "admin" ? <div className="ml-140 text-2xl">Welcome Admin</div>:
           <div className="w-full flex items-center justify-between lg:w-auto">
             <h1 className="text-3xl font-bold cursor-pointer">
               Shop<span className="text-yellow-300">Cart</span>
@@ -81,7 +79,9 @@ const Navbar = () => {
             </button>
           </div>
 
+}
           {/* Search */}
+          {user && user.role === "admin" ? "":
           <div className="w-full lg:flex-1 lg:max-w-2xl">
             <div className="flex">
               <input
@@ -98,6 +98,7 @@ const Navbar = () => {
               </button>
             </div>
           </div>
+}
 
           {/* Icons */}
           {user && user.role === "user" ?
@@ -133,9 +134,9 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <nav className="bg-black text-amber-100">
         <div className="max-w-7xl mx-auto">
-
           <ul className="hidden lg:flex items-center gap-8 px-4 py-3 font-medium">
-
+          {user && user.role === "admin" ? <div><marquee className="w-200">This site is only for admin</marquee></div>:
+          <>
             <li>
               <NavLink to="/" className="hover:text-blue-500">
                 Home
@@ -171,7 +172,8 @@ const Navbar = () => {
                 Contact Us
               </NavLink>
             </li>
-
+          </>
+}
             <div className="ml-auto">
               {user ? (
                 <div className="flex items-center gap-4">
